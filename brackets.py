@@ -28,13 +28,5 @@ def check_brackets(brackets):
 
 
 if __name__ == "__main__":
-    examples = [
-        "(((([{}]))))",
-        "[([])((([[[]]])))]",
-        "{()}",
-        "}{}",
-        "((()))"
-    ]
-
-    for example in examples:
-        print(example, "->", check_brackets(example))
+    brackets = input("Введите строку со скобками: ")
+    print(check_brackets(brackets))
